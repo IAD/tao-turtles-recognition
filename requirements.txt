@@ -1,0 +1,7 @@
+ultralytics
+uvicorn[standard]
+gunicorn
+fastapi[all]
+loguru
+pytest
+pytest-cov
