@@ -24,11 +24,17 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8001
 ```
 
 ## Usage
+### Running the Service Locally
+To start the service locally, use the following command:
 
-You can use the following commands defined in the Makefile
-```shell
-	docker run ghcr.io/iad/tao-turtles-recognition
+```bash
+docker run ghcr.io/iad/tao-turtles-recognition
 ```
+The service will be accessible on port 8001.
+
+### Accessing the Public Service
+Alternatively, you can use the publicly available service at:
+http://isturtle.iadlab.ru/docs
 
 ## FAST API Docs url:
 http://0.0.0.0:8001/docs#/
@@ -36,4 +42,4 @@ http://0.0.0.0:8001/docs#/
 <img width=600 src="./tests/res/fastapi.png" alt="FAST API">    
 
 ---
-Special Thanks to [Alex Lekov](https://github.com/Alex-Lekov/yolov8-fastapi)
+Special Thanks to [Alex-Lekov/yolov8-fastapi](https://github.com/Alex-Lekov/yolov8-fastapi)
