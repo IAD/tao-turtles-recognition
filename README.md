@@ -23,6 +23,13 @@ pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8001
 ```
 
+## Usage
+
+You can use the following commands defined in the Makefile
+```shell
+	docker run ghcr.io/iad/tao-turtles-recognition
+```
+
 ## FAST API Docs url:
 http://0.0.0.0:8001/docs#/
 

@@ -12,3 +12,7 @@ docker-build:
 
 docker-run:
 	docker run -p 8001:8001 docker.io/library/python-app
+
+public-docker-run:
+	docker pull ghcr.io/iad/tao-turtles-recognition
+	docker run ghcr.io/iad/tao-turtles-recognition
