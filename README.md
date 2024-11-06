@@ -1,4 +1,4 @@
-# YOLOv8-FastAPI:
+# YOLO11-FastAPI:
 docker service that uses YOLOv11 to recognize turtles.
 
 ### Sample
