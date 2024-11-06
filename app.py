@@ -10,7 +10,6 @@ from ultralytics.utils.plotting import Annotator, colors
 
 
 # Initialize the models
-# model_sample_model = YOLO("./models/sample_model/yolov8n.pt")
 model_sample_model = YOLO("./runs/detect/train/weights/best.pt")
 
 
@@ -44,7 +43,7 @@ def get_bytes_from_image(image: Image) -> bytes:
 
 def transform_predict_to_df(results: list, labeles_dict: dict) -> pd.DataFrame:
     """
-    Transform predict from yolov8 (torch.Tensor) to pandas DataFrame.
+    Transform predict from yolo11 (torch.Tensor) to pandas DataFrame.
 
     Args:
         results (list): A list containing the predict output from yolov8 in the form of a torch.Tensor.
@@ -132,7 +131,7 @@ def add_bboxs_on_img(image: Image, predict: pd.DataFrame()) -> Image:
 def detect_sample_model(input_image: Image) -> pd.DataFrame:
     """
     Predict from sample_model.
-    Base on YoloV8
+    Base on Yolo11
 
     Args:
         input_image (Image): The input image.
