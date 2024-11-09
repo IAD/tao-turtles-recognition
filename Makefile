@@ -5,7 +5,7 @@ predict:
 	yolo predict model=yolo11n.pt source='photos/Yak-4.jpg'
 
 run:
-	 cd app && uvicorn main:app --reload --host 0.0.0.0 --port 8001
+	 uvicorn main:app --reload --host 0.0.0.0 --port 8001
 
 docker-build:
 	docker build -t python-app .

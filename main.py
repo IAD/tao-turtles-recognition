@@ -142,10 +142,11 @@ def img_object_detection_to_json(file: bytes = File(...)):
 
     # Step 3: Predict from model
     predict = detect_sample_model(input_image)
+    logger.info("predict: {}", predict)
 
     # Step 4: Select detect obj return info
     # here you can choose what data to send to the result
-    detect_res = predict[['name', 'confidence']]
+    detect_res = predict[['name', 'confidence', 'xmin', 'xmax', 'ymin', 'ymax']]
     objects = detect_res['name'].values
 
     result['detect_objects_names'] = ', '.join(objects)
